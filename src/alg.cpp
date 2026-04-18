@@ -25,7 +25,6 @@ std::string infx2pstfx(const std::string& inf) {
         char c = inf[i];
 
         if (c == ' ') continue;
-      
         if (isDigit(c)) {
             while (i < inf.length() && isDigit(inf[i])) {
                 result += inf[i];
