@@ -5,7 +5,7 @@
 template<typename T, int size>
 class TStack {
  private:
-    T data[size];
+    std::array<T, size> data;
     int top;
 
  public:
