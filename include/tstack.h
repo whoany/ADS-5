@@ -5,7 +5,7 @@
 template<typename T, int size>
 class TStack {
  private:
-    T data[N];
+    T data[size];
     int top;
 
  public:
@@ -16,7 +16,7 @@ class TStack {
     }
 
     bool isFull() const {
-        return top == N - 1;
+        return top == size - 1;
     }
 
     void push(T value) {
